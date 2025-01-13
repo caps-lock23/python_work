@@ -1,0 +1,7 @@
+I learned variables and simple data types in Python
+I also learned list in Python
+if statements
+dictionaries
+user input and while loops
+functions
+and classes
