@@ -1,18 +1,12 @@
-sandwich_orders = [
-    "Pastrami",
-    "Turkey Sandwich",
-    "Ham and Cheese Sandwich",
-    "Chicken Salad Sandwich",
-    "Egg Salad Sandwich",
-    "Pastrami",
-    "Pastrami",
-    "Peanut Butter and Jelly Sandwich",
-]
-lower_case = []
+sentence = "This is a sentence, get the longest word and count how many words in it"
 
-while sandwich_orders:
-    sandwich = sandwich_orders.pop()
-    lower_case.append(sandwich.lower())
+sentence= sentence.split()
+max_len = 0
+longest_word = ''
 
-print(sandwich_orders)
-print(lower_case)
+for item in sentence:
+    if len(item) > max_len:
+        max_len = len(item)
+        longest_word = item
+
+print(f'The longest word is {longest_word}\nIt has {max_len} word count')
