@@ -12,3 +12,4 @@ def test_give_default_raise(employee):
 
 def test_give_custom_raise(employee):
     employee.give_raise(500_000)
+    assert employee.annual_salary == 1_500_000
